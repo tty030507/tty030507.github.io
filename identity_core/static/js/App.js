@@ -1270,7 +1270,7 @@ function App() {
                               <div style={styles.attributeValue}>
                                 {a.attribute_value && typeof a.attribute_value === "string" && a.attribute_value.startsWith("/media/") ? (
                                   <a
-                                    href={`\({BACKEND_DOMAIN}\){a.attribute_value}`}
+                                    href={`${BACKEND_DOMAIN}${a.attribute_value}`}
                                     target="_blank"
                                     rel="noreferrer"
                                     style={{ color: "#2563eb", fontWeight: "bold", textDecoration: "underline" }}
