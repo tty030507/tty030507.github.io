@@ -55,7 +55,6 @@ MIDDLEWARE = [
 
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware', 
-    'corsheaders.middleware.CorsMiddleware',      
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -156,6 +155,9 @@ CORS_ALLOW_HEADERS = [
     'x-csrftoken',
     'x-requested-with',
     'x-context',  # Allow the custom context request header.
+    'x-api-key',          
+    'x-client-source',   
+    'accept-language',     
 ]
 
 # Configure DRF to use stateless JWT authentication.
