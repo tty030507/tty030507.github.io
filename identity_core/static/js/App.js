@@ -8,14 +8,14 @@ const RENDER_BACKEND_URL = "https://tty030507-github-io.onrender.com";
 
 const API_BASE = (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1")
   ? "http://127.0.0.1:8000/api"
-  : `${RENDER_BACKEND_URL}/api`;
+  : `${RENDER_BACKEND_URL}/api` ;
 const BACKEND_DOMAIN = (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1")
   ? "http://127.0.0.1:8000"
   : RENDER_BACKEND_URL;
 function App() {
   // =========================================================
   // Authentication & View Mode ("login" | "register" | "reset")
-  // =========================================================
+  // =========================================================  
   const [authView, setAuthView] = useState("login");
   const [activeTab, setActiveTab] = useState("page1");
   const [token, setToken] = useState("");
