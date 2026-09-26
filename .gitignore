@@ -1,0 +1,23 @@
+# 1. 虚拟环境
+venv/
+env/
+ENV/
+
+# 2. 本地数据库文件
+*.sqlite3
+db.sqlite3
+
+# 3. Python 编译缓存文件
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 4. 上传的媒体文件与日志
+media/uploads/
+uploads/
+*.log
+
+# 5. 系统与环境变量文件（避免泄漏密钥）
+.env
+.DS_Store
+Thumbs.db
