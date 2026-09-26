@@ -4,7 +4,7 @@ const axios = window.axios;
 axios.defaults.xsrfCookieName = "csrftoken";
 axios.defaults.xsrfHeaderName = "X-CSRFToken";
 
-const RENDER_BACKEND_URL = "https://你的Render应用名称.onrender.com"; 
+const RENDER_BACKEND_URL = "https://tty030507-github-io.onrender.com"; 
 
 const API_BASE = (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1")
   ? "http://127.0.0.1:8000/api"
